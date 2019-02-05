@@ -2,13 +2,13 @@ module.exports = function (callback) {
   var i;
   var urls = [];
 
-  for (i = 321; i <= 421; i++) {
+  for (i = 200; i <= 1200; i++) {
     urls.push({
       id: i,
-      url: "http://maxptv.ddns.net:25461/get.php?username=" + i + "&password=" + i + "&type=m3u&output=ts"
+      url: "http://cdnmedia.me/get.php?username=" + i + "&password=" + i + "&type=m3u&output=ts"
     });
    
-    if (i === 421) {
+    if (i === 1200) {
       callback(urls);
     }
   }
