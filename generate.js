@@ -2,13 +2,13 @@ module.exports = function (callback) {
   var i;
   var urls = [];
 
-  for (i = 200; i <= 1200; i++) {
+  for (i = 1000; i <= 2000; i++) {
     urls.push({
       id: i,
-      url: "http://cdnmedia.me/get.php?username=" + i + "&password=" + i + "&type=m3u&output=ts"
+      url: "http://listaccess.me:8880/get.php?username=" + i + "&password=" + i + "&type=m3u&output=ts"
     });
    
-    if (i === 1200) {
+    if (i === 2000) {
       callback(urls);
     }
   }
