@@ -2,13 +2,13 @@ module.exports = function (callback) {
   var i;
   var urls = [];
 
-  for (i = 1000; i <= 2000; i++) {
+  for (i = 1500; i <= 1700; i++) {
     urls.push({
       id: i,
-      url: "http://listaccess.me:8880/get.php?username=" + i + "&password=" + i + "&type=m3u&output=ts"
+      url: "http://lista.g5iptv.space:2095/get.php?username=" + i + "&password=" + i + "&type=m3u"
     });
    
-    if (i === 2000) {
+    if (i === 1700) {
       callback(urls);
     }
   }
